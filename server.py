@@ -1,6 +1,6 @@
 from clsSocketServer import SocketServer
 
-exit_words = (b'Exit', b'Quit')  # байтовые строки
+exit_words = (b'Exit', b'Quit')
 
 
 def main():

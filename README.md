@@ -1,4 +1,4 @@
-# A Simple TCP/IP Learning Tool for Students
+# A Simple TCP/IP connection test tool
 
 This tool starts a basic local echo server using the command:
 ``` bash

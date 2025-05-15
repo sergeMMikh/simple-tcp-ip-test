@@ -1,10 +1,12 @@
+import sys
+
 from clsSocketServer import SocketServer
 
 exit_words = (b'Exit', b'Quit')
 
 
-def main():
-    server = SocketServer(port=9000)
+def main(host='127.0.0.1', port=9000):
+    server = SocketServer(host, port)
 
     try:
         while True:
@@ -21,4 +23,5 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    port = int(sys.argv[1]) if len(sys.argv) > 1 else 9000
+    main('127.0.0.1', port)
